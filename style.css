@@ -158,18 +158,90 @@ nav ul {
     }
 }
 
-
-
    #chart {
             max-width: 1500px;
             margin: 50px auto;
-
+            min-height: 50vh;
+            p{
+                 max-width: 1500px;
+                font-family: inter;
+            }
         }
+      
 
 
 
 
 
+/* Style for the platform section */
+.platform {
+    text-align: center;
+}
+
+/* Style for the image with rounded border */
+.platform-img {
+    width: 100%;
+    max-width: 400px; /* Adjust the size of the image */
+    border-radius: 15px; /* Make the corners rounded */
+    margin-bottom: 20px; /* Add space below the image */
+}
+
+/* Style for the lorem text */
+.lorem-text {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Container for the circles */
+.circle-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+/* Style for each circle */
+.circle {
+    width: 80px;
+    height: 80px;
+    background-color: #000000; /* Blue color for the circle */
+    border-radius: 50%; /* Make it round */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for the circle */
+.circle:hover {
+    transform: scale(1.2); /* Increase the size on hover */
+}
+
+/* Style for the text inside the circles */
+.circle-text {
+ width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+/* Show the text when the circle is hovered */
+.circle:hover .circle-text {
+    opacity: 1;
+}
 
 
 
@@ -191,7 +263,7 @@ nav ul {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    gap: 20px;
+    gap: 2px;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -261,3 +333,20 @@ nav ul {
         margin-bottom: 20px;
     }
 }
+
+
+.platform-img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+

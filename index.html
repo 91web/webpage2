@@ -30,8 +30,8 @@
                         <img src="images/close.svg" alt="Close menu">
                     </a>
                 </li>
-                <li><a href="#">Trading</a></li>
-                <li><a href="#">platform</a></li>
+                <li><a href="#" class="scroll-to-chart">Trading</a></li>
+                <li><a href="#" class="scroll-to-platform">platform</a></li>
                 <li><a href="#">Learning</a></li>
                 <li><a href="#">About</a></li>
             </ul>
@@ -57,71 +57,38 @@
  
 <br>
 <hr>
-    <div id="chart"></div>
+    <div id="chart">
+        <div class="chart-discriptions"></div>
+        <h2>Trading Chart</h2>
+        <p class="lorem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
+        <p class="lorem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
+        <p class="lorem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
+    
+    </div>
+    </div>
 
+
+
+   <div class="platform">
+    <h2>Registration Platform</h2>
+    <img src="images/hero2.png" alt="Platform" class="platform-img">
+    <p class="lorem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</p>
+    
+    <div class="circle-container">
+        <div class="circle">
+            <span class="circle-text">Silver</span>
+        </div>
+        <div class="circle">
+            <span class="circle-text">Diamond</span>
+        </div>
+        <div class="circle">
+            <span class="circle-text">Gold</span>
+        </div>
+    </div>
+</div>
 
     </main>
     </div>
-    <script src="script.js"></script>
-    <script>
-    const menu = document.querySelector('nav ul');
-    const menuBtn = document.querySelector('.menu-open');
-    const closeBtn = document.querySelector('.menu-close');
-
-    menuBtn.addEventListener('click', ()=> {
-        menu.classList.add('open')
-          
-    })
-    closeBtn.addEventListener('click',() =>{
-    menu.classList.remove('open')
-     })
-
-
-
-
-
-
-
-
-
-
-
-
-     document.addEventListener("DOMContentLoaded", function () {
-    const options = {
-        series: [
-            {
-                data: [
-                    { x: new Date("2024-12-01"), y: [110, 115, 108, 112] }, 
-                    { x: new Date("2024-12-02"), y: [112, 118, 111, 116] },
-                    { x: new Date("2024-12-03"), y: [116, 120, 114, 119] },
-                    { x: new Date("2024-12-04"), y: [119, 125, 117, 123] },
-                ],
-            },
-        ],
-        chart: {
-            type: "candlestick",
-            height: 350,
-        },
-        title: {
-            text: "Trading Candlestick Chart",
-            align: "center",
-        },
-        xaxis: {
-            type: "datetime",
-        },
-        yaxis: {
-            tooltip: {
-                enabled: true,
-            },
-        },
-    };
-
-    const chart = new ApexCharts(document.querySelector("#chart"), options);
-    chart.render();
-});
-
-</script>
-
+<script src="./script.js"></script>
 </body>
 </html>
